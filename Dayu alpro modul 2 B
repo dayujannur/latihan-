@@ -1,0 +1,8 @@
+# mengecek umur, siap menikah, atau belum
+umur_siap_nikah = 25
+siap = True 
+belum = False
+nama = input ("masukkan nama : ")
+siap_nikah = int (input("masukkan umur :"))
+cek_hasil = umur_siap_nikah <= siap_nikah
+print(cek_hasil)

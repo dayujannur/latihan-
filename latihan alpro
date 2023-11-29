@@ -1,0 +1,53 @@
+# Data penjualan dalam bentuk nested dictionary
+# Contoh data penjualan dalam bentuk nested dictionary
+penjualan_per_kota = {
+    'Samarinda': {
+        'Toko_A': [450, 560, 700],
+        'Toko_B': [600, 700, 850],
+        'Toko_C': [800, 850, 900]
+    },
+    'Balikpapam': {
+        'Toko_X': [490, 650, 780],
+        'Toko_Y': [100, 350, 600],
+        'Toko_Z': [790, 900, 950]
+    },
+    'Bontang': {
+        'Toko_P': [840, 800, 950],
+        'Toko_Q': [550, 850, 900],
+        'Toko_R': [700, 750, 800]
+    }
+}
+
+# Inisialisasi total penjualan
+total_penjualan = 0
+
+# Iterasi melalui kota
+for kota, toko_data in penjualan_per_kota.items():
+    print(f"=== Kota {kota} ===")
+
+    # Inisialisasi total penjualan per kota
+    total_penjualan_kota = 0
+
+    # Iterasi melalui toko di setiap kota
+    for toko, penjualan in toko_data.items():
+        print(f"Toko {toko}: {penjualan}")
+        
+        # Menghitung total penjualan per toko
+        total_penjualan_toko = sum(penjualan)
+        print(f"Total penjualan di Toko {toko}: {total_penjualan_toko}")
+
+        # Menambahkan total penjualan toko ke total penjualan kota
+        total_penjualan_kota += total_penjualan_toko
+
+    print(f"Total penjualan di Kota {kota}: {total_penjualan_kota}\n")
+
+    # Menambahkan total penjualan kota ke total penjualan
+    total_penjualan += total_penjualan_kota
+
+print(f"Total penjualan keseluruhan: {total_penjualan}")
+
+
+
+
+
+

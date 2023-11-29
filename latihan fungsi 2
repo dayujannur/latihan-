@@ -1,0 +1,28 @@
+# membuat set dan dictionary untuk membantu mengetahui data
+nama = {'Jaya', 'Yassa', 'Dayu', 'Aldo'}
+nilai = { 80, 85, 90, 95 }
+
+# membuat dictionary dengan pasangkan dengan set
+nama_nilai1 = {
+    'nama': 'Jaya',
+    'nilai': '80',
+}
+nama_nilai2 = {
+    'nama': 'Yassa',
+    'nilai': '85',
+}
+nama_nilai3 = {
+    'nama': 'Dayu',
+    'nilai': '90',
+}
+nama_nilai4 = {
+    'nama': 'Aldo',
+    'nilai': '95'
+}
+print(nama)
+print(nilai)
+print(nama_nilai1)
+print(nama_nilai2)
+print(nama_nilai3)
+print(nama_nilai4)
+

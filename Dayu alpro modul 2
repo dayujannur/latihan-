@@ -1,0 +1,6 @@
+# mencari nilai rata-rata dari nilai tugas, UTS, UAS
+tugas = float (input ("masukkan nilai tugas : "))
+uts = float (input ("masukkan nilai uts : "))
+uas = float (input ("masukkan nilai uts : "))
+rata_rata = (tugas+uts+uas)/3
+print ("Hasil rata rata: ", rata_rata)
