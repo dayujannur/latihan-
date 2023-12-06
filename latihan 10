@@ -1,0 +1,20 @@
+
+# Program Membaca Data Dari File
+file = open("data.txt", "w")
+
+file.write("Teknik Elektro \n")
+file.write("Elektro 23 \n")
+
+file.close()
+file_path = "data.txt"
+with open(file_path, "r") as file:
+    for line in file:
+        print(line)
+
+file_path = "data.txt"
+with open(file_path, "r") as file:
+    lines = file.readlines()
+
+print("\n".join(lines))
+
+
